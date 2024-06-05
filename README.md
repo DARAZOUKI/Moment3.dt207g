@@ -6,12 +6,12 @@ The web service allows CRUD (Create, Read, Update, Delete) operations to manage 
 ## Usage of the Web Service
 GET - Retrieve all work experiences
 
-    GET /workexperiences
+    GET http://localhost:9000/workexperiences
     This endpoint returns all work experiences in JSON format.
 
 POST - Add a new work experience
 
-    POST /workexperiences
+    POST: http://localhost:9000/workexperiences
     Send a POST request with the following JSON format to add a new work experience:
 
 json
@@ -27,7 +27,7 @@ json
 
 PUT - Update a work experience
 
-    PUT /workexperiences/{id}
+    PUT: http://localhost:9000/workexperiences/{id}
     Send a PUT request with the work experience ID as part of the URL and the following JSON format to update an existing work experience:
 
 json
@@ -43,12 +43,12 @@ json
 
 DELETE - Delete a work experience
 
-    DELETE /workexperiences/{id}
+    DELETE: http://localhost:9000/workexperiences/{id}
     Send a DELETE request with the work experience ID as part of the URL to delete a work experience.
 
 ## Testing the Web Service
 
-You can test the web service using tools like Postman or by sending HTTP requests with tools like cURL or by writing custom JavaScript clients.
+We can test the web service using tools like Postman or by sending HTTP requests with tools like cURL or by writing custom JavaScript clients.
 
 Example with cURL:
 
